@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    font-style: normal
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?landscape') no-repeat;
+    background-size: cover;
+}
+
+header #search{
+    border-radius: 4rem;
+    background-color: rgba(255, 255, 255, 0.565);
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+header #search::placeholder {
+    color: rgba(41, 41, 41, 0.804);
+    letter-spacing: 1px;
+    padding: 1rem;
+}
+
+header button {
+    border-radius: 50%;
+    width: 4rem;
+    background-color: rgba(0, 0, 0, 0.81); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+header button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+header i {
+    color: white;
+}
+
+#container {
+    width: 30rem;
+    color: white;
+    text-shadow: 2px 3px 20px black;
+    margin-left: 4rem;
+    letter-spacing: 3px;
+    font-size: 4rem;
+}
