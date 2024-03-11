@@ -16,13 +16,13 @@ body {
 
 header #search{
     border-radius: 4rem;
-    background-color: rgba(255, 255, 255, 0.565);
+    background-color: rgb(225, 223, 223);
     border: none;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 header #search::placeholder {
-    color: rgba(41, 41, 41, 0.804);
+    color: rgba(0, 0, 0, 0.798);
     letter-spacing: 1px;
     padding: 1rem;
 }
@@ -44,10 +44,14 @@ header i {
 }
 
 #container {
-    width: 30rem;
-    color: white;
-    text-shadow: 2px 3px 20px black;
-    margin-left: 4rem;
+    width: 76rem;
+    color: rgb(246, 227, 227);
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 2.5); 
     letter-spacing: 3px;
     font-size: 4rem;
+}
+
+#container #info {
+    font-size: 2rem;
+    margin-left:56rem;
 }
