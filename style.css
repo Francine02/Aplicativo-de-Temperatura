@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Playfair Display", serif;
     font-weight: 300;
     font-style: normal
 }
@@ -14,44 +13,63 @@ body {
     background-size: cover;
 }
 
-header #search{
-    border-radius: 4rem;
-    background-color: rgb(225, 223, 223);
-    border: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+#content, #search {
+    font-family: "Playfair Display", serif;
 }
 
-header #search::placeholder {
-    color: rgba(0, 0, 0, 0.798);
+#search{
+    background-color: rgba(225, 223, 223, 0);
+    border: none;
+    border-bottom: white solid;
+    outline-style: none;
+    color: rgb(246, 227, 227);
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 2.5); 
+}
+
+#search::placeholder {
+    color: rgb(246, 227, 227);
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 2.5); 
     letter-spacing: 1px;
     padding: 1rem;
 }
 
-header button {
-    border-radius: 50%;
-    width: 4rem;
-    background-color: rgba(0, 0, 0, 0.81); 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0); 
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 2.5); 
 }
 
-header button:hover {
+button:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-header i {
+i {
     color: white;
 }
 
 #container {
-    width: 76rem;
+    padding-left: 5rem;
+    height: 100vh;
     color: rgb(246, 227, 227);
-    text-shadow: 2px 2px 4px rgba(1, 1, 1, 2.5); 
     letter-spacing: 3px;
     font-size: 4rem;
+    background-color: black;
 }
 
-#container #info {
-    font-size: 2rem;
-    margin-left:56rem;
+#container #info{
+    font-size: 30px;
+} 
+
+#container #info p{
+    padding-right: 1rem;
+} 
+
+#clock {
+    font-family: "Kode Mono", monospace;
+    color: rgb(246, 227, 227);
+}
+
+#horas, #minutos {  
+    font-size: 30px;
 }
