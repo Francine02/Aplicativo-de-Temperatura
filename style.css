@@ -42,28 +42,38 @@ button {
 button:hover {
     cursor: pointer;
     opacity: 0.8;
+    outline-style: none;
+}
+
+button:active{
+    opacity: 0.6;
 }
 
 i {
     color: white;
 }
 
+h1{
+    font-size: 6rem;
+}
+
 #container {
+    backdrop-filter: blur(20px);
     padding-left: 5rem;
     height: 100vh;
     color: rgb(246, 227, 227);
     letter-spacing: 3px;
-    font-size: 4rem;
-    background-color: black;
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 2.5); 
 }
-
-#container #info{
-    font-size: 30px;
-} 
 
 #container #info p{
     padding-right: 1rem;
+    font-size: 30px;
 } 
+
+#info-temp {
+    font-size: 4rem;
+}
 
 #clock {
     font-family: "Kode Mono", monospace;
@@ -72,4 +82,9 @@ i {
 
 #horas, #minutos {  
     font-size: 30px;
+}
+
+#col-search {
+    margin-top: 3rem;
+    margin-left: 45%;
 }

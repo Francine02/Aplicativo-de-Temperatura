@@ -1,0 +1,38 @@
+@media (max-width: 575.98px) { 
+    h1 { 
+        font-size: 3rem;
+    }
+    #container {
+        padding-left: 1rem;
+    }
+    #container #info p{
+        padding-right: 2rem;
+        font-size: 24px;
+    } 
+    #info-temp {
+        font-size: 2rem;
+    }
+    #horas, #minutos {  
+        font-size: 20px;
+    }
+    #col-search {
+        margin-left: 0px;
+    }
+    #search {
+        width: 9rem;
+        text-align: start;
+    }
+    #search::placeholder{
+        text-align: start;
+        padding: 0;
+    }
+ }
+
+@media (max-width: 767.98px) {
+ }
+
+@media (max-width: 991.98px) { }
+
+@media (max-width: 1199.98px) {  }
+
+@media (max-width: 1399.98px) { }
