@@ -1,16 +1,19 @@
-@media (max-width: 575.98px) { 
+ /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+ @media (max-width: 575.98px) { 
     h1 { 
-        font-size: 3rem;
+        font-size: 2.1rem;
+        -ms-font-size: 1.8rem;
     }
     #container {
         padding-left: 1rem;
     }
     #container #info p{
         padding-right: 2rem;
-        font-size: 24px;
+        font-size: 20px;
+        -ms-font-size: 19px;
     } 
     #info-temp {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #horas, #minutos {  
         font-size: 20px;
@@ -19,20 +22,91 @@
         margin-left: 0px;
     }
     #search {
-        width: 9rem;
+        width: 8.5rem;
+        -ms-width: 8rem;
         text-align: start;
+        font-size: 18px;
     }
     #search::placeholder{
         text-align: start;
         padding: 0;
     }
+  }
+ 
+ /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+ @media (min-width: 576px) and (max-width: 767.98px) { 
+    h1 { 
+        font-size: 3rem;
+        -ms-font-size: 2.4rem;
+    }
+    #container {
+        padding-left: 1.8rem;
+    }
+    #container #info p{
+        padding-right: 3rem;
+        font-size: 24px;
+        -ms-font-size: 22px;
+    } 
+    #info-temp {
+        font-size: 2rem;
+    }
+    #horas, #minutos {  
+        font-size: 22px;
+    }
+    #col-search {
+        margin-left: 15px;
+    }
+    #search {
+        width: 9rem;
+        -ms-width: 8.5rem;
+        text-align: start;
+        font-size: 18px;
+    }
+    #search::placeholder{
+        text-align: center;
+        padding: 1px;
+    }
  }
-
-@media (max-width: 767.98px) {
- }
-
-@media (max-width: 991.98px) { }
-
-@media (max-width: 1199.98px) {  }
-
-@media (max-width: 1399.98px) { }
+ 
+ /* Dispositivos médios (tablets com 768px ou mais)*/
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    h1 { 
+        font-size: 4.5rem;
+        -ms-font-size: 4rem;
+    }
+    #container {
+        padding-left: 2.5rem;
+    }
+    #container #info p{
+        padding-right: 3rem;
+        font-size: 24.4px;
+        -ms-font-size: 23px;
+    } 
+    #info-temp {
+        font-size: 2.9rem;
+        padding-right: 2rem;
+    }
+    #horas, #minutos {  
+        font-size: 26px;
+    }
+    #col-search {
+        margin-left: 40px;
+    }
+    #search {
+        width: 11rem;
+        -ms-width: 10rem;
+        text-align: center;
+        padding: 2px;
+    }
+    #search::placeholder{
+        text-align: center;
+        padding: 2px;
+    }
+  }
+ 
+ /* Dispositivos large (desktops com 992px ou mais)*/
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    #col-search {
+        margin-left: 70px;
+    }
+  }
