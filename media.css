@@ -15,7 +15,7 @@
     #info-temp {
         font-size: 1.5rem;
     }
-    #horas, #minutos {  
+    #horas, #minutos, #date {  
         font-size: 20px;
     }
     #col-search {
@@ -56,7 +56,7 @@
     #info-temp {
         font-size: 2rem;
     }
-    #horas, #minutos {  
+    #horas, #minutos, #date {  
         font-size: 22px;
     }
     #col-search {
@@ -98,8 +98,8 @@
         font-size: 2.9rem;
         padding-right: 2rem;
     }
-    #horas, #minutos {  
-        font-size: 26px;
+    #horas, #minutos, #date {  
+        font-size: 25px;
     }
     #col-search {
         margin-left: 40px;

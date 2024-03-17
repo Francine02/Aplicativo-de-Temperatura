@@ -12,6 +12,7 @@ const icon = document.getElementById("icon");
 const wind = document.getElementById("wind");
 const humidity = document.getElementById("humidity");
 const local = document.getElementById ("local");
+const alert = document.querySelector("#content h2");
 
 async function findCity (){
     const searchInput = search.value; /*Get the value inside of the input*/
@@ -23,13 +24,29 @@ async function findCity (){
 }
 
 function changeElements (apiWeather) {
-    title.innerText = apiWeather.name;
-    temp.innerText = apiWeather.main.temp.toFixed(0) + '°c';
-    icon.setAttribute("src", `https://openweathermap.org/img/wn/${apiWeather.weather[0].icon}.png`);
-    wind.innerHTML = '<i class="bi bi-wind"></i> ' + Math.round(apiWeather.wind.speed) + 'km/h';
-    humidity.innerHTML = '<i class="bi bi-droplet-fill"></i>' + apiWeather.main.humidity + '%';
-    local.innerHTML = '<i class="bi bi-geo-alt-fill"></i>' + apiWeather.sys.country;
+    if (!search.value === false){ 
+        alert.innerText = '';
+        title.innerText = apiWeather.name;
+        temp.innerText = apiWeather.main.temp.toFixed(0) + '°c';
+        icon.setAttribute("src", `https://openweathermap.org/img/wn/${apiWeather.weather[0].icon}.png`);
+        wind.innerHTML = '<i class="bi bi-wind"></i> ' + Math.round(apiWeather.wind.speed) + 'km/h';
+        humidity.innerHTML = '<i class="bi bi-droplet-fill"></i>' + apiWeather.main.humidity + '%';
+        local.innerHTML = '<i class="bi bi-geo-alt-fill"></i>' + apiWeather.sys.country;
+    } 
+    else {
+        alert.innerText = 'Erro! Digite o nome da cidade!!';
+        title.innerText = '';
+        temp.innerText = '';
+        icon.setAttribute("src", `https://www.freeiconspng.com/uploads/error-icon-32.png`);
+        wind.innerHTML = '';
+        humidity.innerHTML = '';
+        local.innerHTML = '';
+    }
 }
 
-
 buttonSearch.addEventListener('click', findCity);
+document.addEventListener('keypress', ({key}) => {
+    if (key === "Enter"){
+        findCity()
+    }
+});

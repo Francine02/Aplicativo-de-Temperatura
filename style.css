@@ -22,7 +22,7 @@ body {
     border: none;
     border-bottom: white solid;
     outline-style: none;
-    color: rgb(246, 227, 227);
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(1, 1, 1, 2.5); 
     font-size: 23px;
 }
@@ -59,6 +59,7 @@ i {
 
 h1{
     font-size: 6rem;
+    text-align: center;
 }
 
 #container {
@@ -86,7 +87,7 @@ h1{
     height: 12%;
 }
 
-#clock {
+#clock, #date {
     font-family: "Kode Mono", monospace;
     color: white;
 }
@@ -98,4 +99,18 @@ h1{
 #col-search {
     margin-top: 3rem;
     margin-left: 45%;
+}
+
+#info p{
+    text-align: center;
+    border-right: 4px solid #e8e8e8;
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 4); 
+}
+
+#info p:last-child {
+    border-right: none;
+}
+
+#date {
+    font-size: 27px;
 }
